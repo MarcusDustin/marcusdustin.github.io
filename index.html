@@ -2,68 +2,118 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Projects | Marcus Dustin</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marcus Dustin - Engineering Portfolio</title>
+  <style>
+    body {
+      background-color: white;
+      color: #002b80;
+      font-family: "Verdana", sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #e6f0ff;
+      text-align: center;
+      padding: 25px 0;
+      border-bottom: 2px solid #0047b3;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      color: #002b80;
+    }
+
+    header p {
+      margin: 5px 0 0 0;
+      font-size: 1em;
+      color: #0047b3;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    h2 {
+      border-bottom: 2px solid #0047b3;
+      padding-bottom: 5px;
+      color: #002b80;
+      font-size: 1.5em;
+      text-transform: uppercase;
+    }
+
+    .projects {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    .project {
+      width: 30%;
+      text-align: center;
+      border: 1px solid #0047b3;
+      border-radius: 4px;
+      padding: 10px;
+      background-color: #f7faff;
+      box-shadow: 2px 2px 4px #cdd9ff;
+      transition: background-color 0.2s;
+      cursor: pointer;
+    }
+
+    .project:hover {
+      background-color: #e0ebff;
+    }
+
+    .project img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border: 1px solid #0047b3;
+    }
+
+    .project-title {
+      margin-top: 10px;
+      font-weight: bold;
+      color: #002b80;
+    }
+  </style>
+
+  <script>
+    function openPopup(projectFile) {
+      window.open(projectFile, '_blank', 'width=900,height=600,scrollbars=yes,resizable=yes');
+    }
+  </script>
 </head>
 <body>
-  <table width="90%" align="center" cellspacing="0" cellpadding="10" border="0">
-    <tr bgcolor="#0047ab">
-      <td align="center" colspan="3">
-        <font color="white" size="6"><b>Projects</b></font>
-      </td>
-    </tr>
+  <header>
+    <h1>Marcus Dustin</h1>
+    <p><a href="mailto:marcus.dustin@example.com">marcus.dustin@example.com</a></p>
+  </header>
 
-    <tr>
-      <td colspan="3" height="20"></td>
-    </tr>
+  <main>
+    <h2>Projects</h2>
 
-    <tr valign="top" align="center">
-      <!-- Project 1 -->
-      <td width="33%">
-        <img src="robotic_arm.jpg" width="280" alt="Robotic Arm"><br><br>
-        <font size="4"><b>Robotic Arm</b></font><br><br>
-        <font size="2">
-          <b>Progress:</b> Completed<br>
-          <b>Date:</b> Jan 2025<br>
-          <b>Skills:</b> Solidworks, DFA, DFM, Electronics<br>
-          <b>Difficulty:</b> ★★★★☆
-        </font>
-      </td>
+    <div class="projects">
+      <div class="project" onclick="openPopup('project1.html')">
+        <img src="project1-thumbnail.jpg" alt="Project 1 Thumbnail">
+        <div class="project-title">5-Axis Robotic Arm Bartender</div>
+      </div>
 
-      <!-- Project 2 -->
-      <td width="33%">
-        <img src="eink_calendar.jpg" width="280" alt="E-Ink Digital Calendar"><br><br>
-        <font size="4"><b>E-Ink Digital Calendar</b></font><br><br>
-        <font size="2">
-          <b>Progress:</b> Completed<br>
-          <b>Date:</b> Sept 2025<br>
-          <b>Skills:</b> Arduino, APIs, C++, Solidworks, PCB design<br>
-          <b>Difficulty:</b> ★★★★★
-        </font>
-      </td>
+      <div class="project" onclick="openPopup('project2.html')">
+        <img src="project2-thumbnail.jpg" alt="Project 2 Thumbnail">
+        <div class="project-title">Ball-Balancing Robot</div>
+      </div>
 
-      <!-- Project 3 -->
-      <td width="33%">
-        <img src="battery_cell_holder.jpg" width="280" alt="Battery Cell Holders"><br><br>
-        <font size="4"><b>Battery Cell Holders</b></font><br><br>
-        <font size="2">
-          <b>Progress:</b> Completed<br>
-          <b>Date:</b> March 2025<br>
-          <b>Skills:</b> Solidworks, DFM, Electrical Design<br>
-          <b>Difficulty:</b> ★★★★☆
-        </font>
-      </td>
-    </tr>
-
-    <tr>
-      <td colspan="3" height="40"></td>
-    </tr>
-
-    <tr bgcolor="#0047ab">
-      <td align="center" colspan="3">
-        <font color="white" size="2">© 2025 Marcus Dustin</font>
-      </td>
-    </tr>
-  </table>
+      <div class="project" onclick="openPopup('project3.html')">
+        <img src="project3-thumbnail.jpg" alt="Project 3 Thumbnail">
+        <div class="project-title">Custom Dirt Bike Build</div>
+      </div>
+    </div>
+  </main>
 </body>
 </html>
