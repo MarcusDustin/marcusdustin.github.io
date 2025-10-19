@@ -5,43 +5,14 @@
         "file": "project.md"
     },
     {
-        "id": "digital_calendar",
-        "folder": "digital_calendar",
+        "id": "quadruped_robot",
+        "folder": "quadruped_robot",
         "file": "project.md"
     },
     {
-        "id": "cell_holder",
-        "folder": "cell_holder",
+        "id": "minibike_build",
+        "folder": "minibike_build",
         "file": "project.md"
     },
-    {
-        "id": "3ds_scanning",
-        "folder": "3d_scanning",
-        "file": "project.md"
-    },
-    {
-        "id": "pipe_bending_jig",
-        "folder": "pipe_bending_jig",
-        "file": "project.md"
-    },
-    {
-        "id": "arcade",
-        "folder": "arcade",
-        "file": "project.md"
-    },
-    {
-        "id": "welded_lid",
-        "folder": "welded_lid",
-        "file": "project.md"
-    },
-    {
-        "id": "catchall",
-        "folder": "catchall",
-        "file": "project.md"
-    },
-    {
-        "id": "shop_organization",
-        "folder": "shop_organization",
-        "file": "project.md"
-    }
+
 ]
